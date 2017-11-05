@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: поиск отелей в Седоне</title>
+  </head>
+  <body>
+    <header class='main-header'>
+      <nav class='main-navigation'>
+        <ul class='site-navigation'>
+          <li><a href='info.html' >Информация</a></li>
+          <li><a href='album.html'>Фото и видео</a></li>
+          <li><a href='map.html'>Карта штата</a></li>
+          <li><a href='hotels.html'>Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class='container-search'>
+      <section class='filter-big'>
+        <!--заменю на формы-->
+        <div class ='form-Infrastructure' >
+          <p>Инфраструктура:</p>
+          <ul>
+            <li>Бассейн</li>
+            <li>Парковка</li>
+            <li>WI-FI</li>
+          </ul>
+        <div>
+        <div class ='form-type-hotel' >
+          <p>Тип жилья:</p>
+          <ul>
+            <li>Гостиница</li>
+            <li>Мотель</li>
+            <li>Апартаменты</li>
+          </ul>
+        <div>
+        <div class='form-cost'>
+          <p>Стоимость в сутки(Р):</p>
+          <!-- Здесь будет форма -->
+        </div>
+      </section>
+      <section class='filter-small'>
+        <!--заменю на формы-->
+        <p>Найдено:<span class='counter'>3</span></p>
+        <div class='sorting'>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По рейтингу</li>
+          </ul>
+          <span class='triangles'>&#9660</span>
+          <span class='triangles'>&#9650</span>
+        <div>
+      </section>
+
+      <section class='search-results'>
+       <ul class='hotel-search-list'>
+         <li class='hotel-search-item'>
+          <div class='hotel-card'
+            <img src='http://placehold.it/' width='100' height='' alt='Фото отеля'>
+            <h2 class='name-hotel'>Amara Resort & Spa</h2>
+            <!--Предположу что th можно скрыть с помощью стилей-->
+            <table>
+              <tr>
+                <th>Тип жилья</th>
+                <th>Стоимость</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Гостиница</td>
+                <td>от 3500 Р.</td>
+              </tr>
+            </table>
+            <a class='button description'>Подробнее</a>
+            <a class='button booking'>Забронировать</a>
+           </div>
+          <div class='hotel-rating'>
+           <span class='hotel-star'>&#9733;</span>
+           <span class='hotel-star'>&#9733;</span>
+           <span class='hotel-star'>&#9733;</span>
+           <p>Рейтинг<span class='rating'>8,5</span></p>
+          </div>
+        </li>
+        <li class='hotel-search-item'>
+         <div class='hotel-card'
+           <img src='http://placehold.it/' width='100' height='' alt='Фото отеля'>
+           <h2 class='name-hotel'>Desert Quail Inn</h2>
+           <!--Предположу что th можно скрыть с помощью стилей-->
+           <table>
+             <tr>
+               <th>Тип жилья</th>
+               <th>Стоимость</th>
+               <th></th>
+             </tr>
+             <tr>
+               <td>Мотель</td>
+               <td>от 2000 Р.</td>
+             </tr>
+           </table>
+           <a class='button description'>Подробнее</a>
+           <a class='button booking'>Забронировать</a>
+          </div>
+         <div class='hotel-rating'>
+          <span class='hotel-star'>&#9733;</span>
+          <span class='hotel-star'>&#9733;</span>
+          <span class='hotel-star'>&#9733;</span>
+          <p>Рейтинг<span class='rating'>8,9</span></p>
+         </div>
+       </li>
+       <li class='hotel-search-item'>
+        <div class='hotel-card'
+          <img src='http://placehold.it/' width='100' height='' alt='Фото отеля'>
+          <h2 class='name-hotel'>Villas at Poco Diablo</h2>
+          <!--Предположу что th можно скрыть с помощью стилей-->
+          <table>
+            <tr>
+              <th>Тип жилья</th>
+              <th>Стоимость</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Апартаменты</td>
+              <td>от 4000 Р.</td>
+            </tr>
+          </table>
+          <a class='button description'>Подробнее</a>
+          <a class='button booking'>Забронировать</a>
+         </div>
+        <div class='hotel-rating'>
+         <span class='hotel-star'>&#9733;</span>
+         <span class='hotel-star'>&#9733;</span>
+         <span class='hotel-star'>&#9733;</span>
+         <p>Рейтинг<span class='rating'>9,2</span></p>
+        </div>
+      </li>
+      </section>
+
+    </main>
+    <footer class='main-footer'>
+      <p ='hashtag'>#visitsedona</p>
+      <div class='social'>
+        <ul>
+          <li><a class='social-button' href='#'>Твиттер</a></li>
+          <li><a class='social-button' href='#'>Фейсбук</a></li>
+          <li><a class='social-button' href='#'>Ютуб</a></li>
+        </ul>
+      </div>
+      <p class='copyright'>
+        website by<a href='https://htmlacademy.ru'>HTML Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
