@@ -7,11 +7,12 @@
   <body>
     <header class='main-header'>
       <nav class='main-navigation'>
-        <ul class='site-navigation'>
-          <li><a href='info.html' >Информация</a></li>
-          <li><a href='album.html'>Фото и видео</a></li>
-          <li><a href='map.html'>Карта штата</a></li>
-          <li><a href='hotels.html'>Гостиницы</a></li>
+        <img class ='logo' src='index-logo.svg' width='100' height='100' alt='логотип &laquo;SITY OF SEDONA&raquo;'>
+        <ul class='site-navigation-list'>
+          <li class='site-navigation-item' ><a class='site-navigation-info' href='info.html' >Информация</a></li>
+          <li class='site-navigation-item' ><a class='site-navigation-album' href='album.html'>Фото и видео</a></li>
+          <li class='site-navigation-item' ><a class='site-navigation-map' href='map.html'>Карта штата</a></li>
+          <li class='site-navigation-item' ><a class='site-navigation-hotels-search' href='hotels-search.html'>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -20,18 +21,18 @@
         <!--заменю на формы-->
         <div class ='form-Infrastructure' >
           <h2>Инфраструктура:</h2>
-          <ul>
-            <li>Бассейн</li>
-            <li>Парковка</li>
-            <li>WI-FI</li>
+          <ul class='form-Infrastructure-list'>
+            <li class='form-Infrastructure-item'>Бассейн</li>
+            <li class='form-Infrastructure-item' >Парковка</li>
+            <li class='form-Infrastructure-item'>WI-FI</li>
           </ul>
         </div>
-        <div class ='form-type-hotel' >
-          <p>Тип жилья:</p>
-          <ul>
-            <li>Гостиница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
+        <div class='form-type-hotel' >
+          <h2>Тип жилья:</h2>
+          <ul class='form-type-hotel-list'>
+            <li class='form-type-hotel-item'>Гостиница</li>
+            <li class='form-type-hotel-item'>Мотель</li>
+            <li class='form-type-hotel-item' >Апартаменты</li>
           </ul>
         </div>
         <div class='form-cost'>
@@ -43,13 +44,13 @@
         <!--заменю на формы-->
         <h2>Найдено:<span class='counter'>3</span></h2>
         <div class='sorting'>
-          <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
-          </ul>
-          <span class='triangles'>&#9660;</span>
-          <span class='triangles'>&#9650;</span>
+          <a class='sorting-cost' href='#'>По цене</a>
+          <a class='sorting-type' href='#'>По типу</a>
+          <a class='sorting-rating' href='#'>По рейтингу</a>
+          <div class='triangles'>
+            <a class='triangles-wane'>&#9660;</a>
+            <a class='triangles-growth'>&#9650;</a>
+          </div>
         </div>
       </section>
 
@@ -60,14 +61,14 @@
             <img src='http://placehold.it/' width='100' height='100' alt='Фото отеля'>
             <h2 class='name-hotel'>Amara Resort & Spa</h2>
             <!--Предположу что th можно скрыть с помощью стилей-->
-            <table>
+            <table class='cost-and-type-table'>
               <tr>
-                <th>Тип жилья</th>
-                <th>Стоимость</th>
+                <th class='header-type-hotel'>Тип жилья</th>
+                <th class='header-cost-hotel' >Стоимость</th>
               </tr>
               <tr>
-                <td>Гостиница</td>
-                <td>от 3500 Р.</td>
+                <td class='type-hotel'>Гостиница</td>
+                <td class='cost-hotel'>от 3500 Р.</td>
               </tr>
             </table>
             <a class='button description'>Подробнее</a>
@@ -85,14 +86,14 @@
            <img src='http://placehold.it/' width='100' height='100' alt='Фото отеля'>
            <h2 class='name-hotel'>Desert Quail Inn</h2>
            <!--Предположу что th можно скрыть с помощью стилей-->
-           <table>
+           <table class='cost-and-type-table'>
              <tr>
-               <th>Тип жилья</th>
-               <th>Стоимость</th>
+               <th class='header-type-hotel'>Тип жилья</th>
+               <th class='header-cost-hotel' >Стоимость</th>
              </tr>
              <tr>
-               <td>Мотель</td>
-               <td>от 2000 Р.</td>
+               <td class='type-hotel'>Мотель</td>
+               <td class='cost-hotel'>от 2000 Р.</td>
              </tr>
            </table>
            <a class='button description'>Подробнее</a>
@@ -110,14 +111,14 @@
           <img src='http://placehold.it/' width='100' height='100' alt='Фото отеля'>
           <h2 class='name-hotel'>Villas at Poco Diablo</h2>
           <!--Предположу что th можно скрыть с помощью стилей-->
-          <table>
+          <table class='cost-and-type-table'>
             <tr>
-              <th>Тип жилья</th>
-              <th>Стоимость</th>
+              <th class='header-type-hotel'>Тип жилья</th>
+              <th class='header-cost-hotel' >Стоимость</th>
             </tr>
             <tr>
-              <td>Апартаменты</td>
-              <td>от 4000 Р.</td>
+              <td class='type-hotel' >Апартаменты</td>
+              <td class='type-hotel' >от 4000 Р.</td>
             </tr>
           </table>
           <a class='button description'>Подробнее</a>
@@ -136,13 +137,13 @@
     </main>
     <footer class='main-footer'>
       <p class='hashtag'>#visitsedona</p>
-      <div class='social'>
-        <ul>
-          <li><a class='social-button' href='#'>Твиттер</a></li>
-          <li><a class='social-button' href='#'>Фейсбук</a></li>
-          <li><a class='social-button' href='#'>Ютуб</a></li>
+
+        <ul class='social'>
+          <li><a class='social-button twitter' href='#'>Твиттер</a></li>
+          <li><a class='social-button facebook' href='#'>Фейсбук</a></li>
+          <li><a class='social-button youtube' href='#'>Ютуб</a></li>
         </ul>
-      </div>
+
       <p class='copyright'>
         website by<a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a>
       </p>
