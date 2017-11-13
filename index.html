@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy:Седона</title>
   </head>
   <body>
      <header class='main-header'>
        <nav class='main-navigation' aria-label='Навигация'>
-         <img class ='logo' src='img/logo.png' width='138' height='70' alt='логотип &laquo;SITY OF SEDONA&raquo;'>
+         <img class='logo' src='img/logo.png' width='138' height='70' alt='логотип &laquo;SITY OF SEDONA&raquo;'>
          <ul class='site-navigation-list'>
            <li class='site-navigation-item' ><b class='current page' >Информация</b></li>
            <li class='site-navigation-item' ><a class='site-navigation-link' href='album.html'>Фото и видео</a></li>
@@ -17,11 +17,11 @@
        </nav>
      </header>
      <main class='container'>
-       <img class ='logo' src='img/sedona.png' width='458' height='352' alt='Welcome to the gorgeous Sedona,because the grand canyon sucks'>
-       <h1 class='slogan' >Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+       <img class='logo' src='img/sedona.png' width='458' height='352' alt='Welcome to the gorgeous Sedona,because the grand canyon sucks'>
+       <h1 class='slogan'>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 
        <section class='features'>
-         <h2 class=''>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+         <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
          <ul class='features-list'>
            <li class='features-item'>
              <h3>Настоящий городок</h3>
@@ -29,7 +29,6 @@
              <img src='img/index-hotel-photo.jpg' width='800' height='256' alt='Фото настоящего мотеля'>
            </li>
            <li class='features-item-inner'>
-
              <ul class='inner-features-list'>
                <li class='inner-features-item'>
                    <h3>Жилье</h3>
@@ -64,7 +63,6 @@
            </li>
         </ul>
       </section>
-
       <section class='serch-hotel'>
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
@@ -81,17 +79,20 @@
             </p>
             <p class='form-elem' >
               <label for='number-people'>Взрослые:</label>
+              <button type=submit class='min-people' aria-label='меньше взрослых'>-</button>
               <input class='form-input number' type='text' name='number' id='number-people'>
+              <button type=submit class='max-people' aria-label='больше взрослых'>+</button>
             </p>
             <p class='form-elem'>
               <label for='number-child' >Дети:</label>
-              <input class='form-input number' type='text' name='number' id='number-child' >
+              <button type=submit class='min-child' aria-label='меньше детей'>-</button>
+              <input class='form-input number' type='text' name='number' id='number-child'>
+              <button type=submit class='max-child' aria-label='больше детей'>-</button>
             </p>
-            <a href='#' class='button search' aria-label='найти отель'>Найти</a>
+            <button type='submit' class='button search' aria-label='найти отель'>Найти</button>
           </fieldset>
         </form>
       </section>
-
      </main>
      <footer class='main-footer'>
        <p class='hashtag'>#visitsedona</p>

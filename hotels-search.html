@@ -2,71 +2,65 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: поиск отелей в Седоне</title>
+    <title>HTML Academy:поиск отелей в Седоне</title>
   </head>
   <body>
     <header class='main-header'>
       <nav class='main-navigation' aria-label='Навигация'>
         <a class='logo-site-navigation-info' href='info.html' aria-label='переход на главную'>
-          <img class ='logo' src='img/logo.png' width='138' height='70' alt='логотип &laquo;SITY OF SEDONA&raquo;'>
+          <img class='logo' src='img/logo.png' width='138' height='70' alt='логотип &laquo;SITY OF SEDONA&raquo;'>
         </a>
         <ul class='site-navigation-list'>
-          <li class='site-navigation-item' ><a class='site-navigation-link' href='info.html' >Информация</a></li>
-          <li class='site-navigation-item' ><a class='site-navigation-link' href='album.html'>Фото и видео</a></li>
-          <li class='site-navigation-item' ><a class='site-navigation-link' href='map.html'>Карта штата</a></li>
-          <li class='site-navigation-item'> <b class='current page'>Гостиницы</b></li>
+          <li class='site-navigation-item'><a class='site-navigation-link' href='info.html'>Информация</a></li>
+          <li class='site-navigation-item'><a class='site-navigation-link' href='album.html'>Фото и видео</a></li>
+          <li class='site-navigation-item'><a class='site-navigation-link' href='map.html'>Карта штата</a></li>
+          <li class='site-navigation-item'><b class='current page'>Гостиницы</b></li>
         </ul>
       </nav>
     </header>
     <main class='container-search'>
       <section class='filter-big'>
         <form action='https://echo.htmlacademy.ru' method='get' class='filter-big-from'>
-          <fieldset class ='form-Infrastructure' >
+          <fieldset class='form-infrastructure'>
             <legend>Инфраструктура:</legend>
             <p class='filter-option'>
-              <input class=' visually hidden filter-input-checkbox' type='checkbox' name='Infrastructure' value='pool' id='pool'>
+              <input class='visually hidden filter-input-checkbox' type='checkbox' name='pool' id='pool'>
               <label for='pool'>Бассейн</label>
             </p>
             <p class='filter-option'>
-              <input class='visually-hidden filter-input-checkbox' type='checkbox' name='Infrastructure' value='parking' id='parking'>
+              <input class='visually-hidden filter-input-checkbox' type='checkbox' name='parking' id='parking'>
               <label for='parking'>Парковка</label>
             </p>
             <p class='filter-option'>
-              <input class='visually-hidden filter-input-checkbox' type='checkbox' name='Infrastructure' value='Wi-Fi' id='Wi-Fi'>
-              <label for='Wi-Fi'>Wi-Fi</label>
+              <input class='visually-hidden filter-input-checkbox' type='checkbox' name='wi-fi' id='wi-fi'>
+              <label for='wi-fi'>wi-fi</label>
             </p>
           </fieldset>
           <fieldset class ='form-type-hotel' >
             <legend>Тип жилья:</legend>
             <p class='filter-option'>
-              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='Infrastructure' value='hotel' id='hotel'>
+              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='hotel' id='hotel'>
               <label for='hotel'>Гостиница</label>
             </p>
             <p class='filter-option'>
-              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='Infrastructure' value='motel' id='motel'>
+              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='motel' id='motel'>
               <label for='motel'>Мотель</label>
             </p>
             <p class='filter-option'>
-              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='Infrastructure' value='apartments' id='apartments'>
+              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='apartments' id='apartments'>
               <label for='apartments'>Апартаменты</label>
             </p>
           </fieldset>
           <fieldset class='form-cost'>
             <legend>Стоимость в сутки(Р):</legend>
-            <table class='table-cosnt-filter'>
-              <tr class='table-cosnt-filter-caption'>
-                <th>от<span class='min-price'>0</span></th>
-                <th>до<span class='man-price'>3000</span></th>
-              </tr>
-            </table>
-            <p class='filter-option'>
-             <label class='visually-hidden' for='range-left'>нижняя граница стоимости</label>
-             <input class='filter-input-range' type='range' name='range'
-               id='range-left' min='0' max='3000' step='1' value='0'>
-             <label class='visually-hidden' for='range-right'>верхняя граница стоимости</label>
-             <input class='filter-input-range' type='range' name='range'
-               id='range-right' min='0' step='1' value='3000'>
-            </p>
+                <label class='visually-hidden' for='min-price'>нижняя граница стоимости</label>
+                <input type='text' name='min-price' id='min-price'>
+                <label class='visually-hidden' for='max-price'>верхняя граница стоимости</label>
+                <input type='text' name='max-price' id='max-price'>
+             <p class='filter-option'>
+               <button type='submit' class='range-left' aria-label='передвинуть нижнюю границу стоимости'></button>
+               <button type='submit' class='range-right' aria-label='передвинуть верхнюю границу стоимости'></button>
+             </p>
           </fieldset>
           <button type='submit' class='filter-button'>Найти</button>
         </form>
@@ -117,7 +111,7 @@
            <table class='cost-and-type-table'>
              <tr class='visually-hidden'>
                <th class='header-type-hotel'>Тип жилья</th>
-               <th class='header-cost-hotel' >Стоимость</th>
+               <th class='header-cost-hotel'>Стоимость</th>
              </tr>
              <tr>
                <td class='type-hotel'>Мотель</td>
@@ -141,11 +135,11 @@
           <table class='cost-and-type-table'>
             <tr class='visually-hidden'>
               <th class='header-type-hotel'>Тип жилья</th>
-              <th class='header-cost-hotel' >Стоимость</th>
+              <th class='header-cost-hotel'>Стоимость</th>
             </tr>
             <tr>
-              <td class='type-hotel' >Апартаменты</td>
-              <td class='type-hotel' >от 4000 Р.</td>
+              <td class='type-hotel'>Апартаменты</td>
+              <td class='type-hotel'>от 4000 Р.</td>
             </tr>
           </table>
           <a href='#' class='button description'>Подробнее</a>
@@ -160,7 +154,6 @@
         </li>
       </ul>
      </section>
-
     </main>
     <footer class='main-footer'>
       <p class='hashtag'>#visitsedona</p>
