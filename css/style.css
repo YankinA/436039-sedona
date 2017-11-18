@@ -10,15 +10,14 @@ body {
 
   background-color: #ffffff;
   background-image: url('../img/background-index.jpg');
-  background-position: ;
   background-repeat: no-repeat;
 }
-/*  background-color: #e8e2e2; временный фон что бы было видно белые буквы  */
+
 .body-hotel {
-  background-color: #e8e2e2;
+  background-color: #ffffff;
   background-image: url('../img/background-hotel-search.jpg');
-  background-position: ;
-  background-repeat: ;
+  background-repeat:no-repeat;
+  background-size: 100%;
 }
 
  a {
@@ -31,32 +30,42 @@ body {
 }
 
 .site-navigation-list {
-list-style: none;
+ list-style: none;
 }
 
 .current-page {
-color: #766357;
+ color: #766357;
 }
 .site-navigation-list a {
-color:#000000;
+ font-weight: bold;
+ color:#000000;
 }
 
 .site-navigation-list a:hover {
-color: #81b3d2;
+ color: #81b3d2;
 }
 
 .site-navigation-list a:active {
 color: rgba(0,0,0, 0.3);
 }
 
-.background-white{
-  background-color:#ffffff;
+.background-white {
   text-align: center;
+  background-color: #ffffff;
 }
 
-.container h1 {
-   font-size: 21px;
-   color: #000000;
+.slogan {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+}
+.container h2 {
+  font-size:  14px;
+}
+
+.features-item h3 {
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .features .features-item:first-child,
@@ -76,18 +85,30 @@ color: rgba(0,0,0, 0.3);
   list-style: none;
 }
 
+.inner-features-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
 .features-list:nth-last-child {
   color: #ffffff;
 }
 
 .serch-hotel h2 {
  font-size: 30px;
- line-height: 26px;
+ line-height: 36px;
+ font-weight: bold;
  color: #000000;
 }
 
 .serch-hotel p:first-child {
  line-height: 24px;
+}
+
+.serch-hotel-form  {
+  font-weight: bold;
 }
 
 .serch-hotel-form legend {
@@ -155,6 +176,17 @@ color: rgba(0,0,0, 0.3);
   font-size: 21px;
   font-weight: bold;
 }
+
+.main-footer .hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+ .copyright {
+  color: #000000;  
+}
+
 .filter-big {
   color: #ffffff;
 }
@@ -173,7 +205,10 @@ color: rgba(0,0,0, 0.3);
   color: #000000;
   background-color: #ffffff;
 }
-
+ .filter-small {
+   z-index: 1;
+   background-color: #ffffff;
+ }
 .filter-small h2 {
   font-size: 21px;
   font-weight: bold;
