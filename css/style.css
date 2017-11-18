@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color:#333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url('../img/background-index.jpg');
+  background-position: ;
+  background-repeat: no-repeat;
+}
+/*  background-color: #e8e2e2; временный фон что бы было видно белые буквы  */
+.body-hotel {
+  background-color: #e8e2e2;
+  background-image: url('../img/background-hotel-search.jpg');
+  background-position: ;
+  background-repeat: ;
+}
+
+ a {
+   text-decoration: none;
+ }
+
+.main-navigation {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation-list {
+list-style: none;
+}
+
+.current-page {
+color: #766357;
+}
+.site-navigation-list a {
+color:#000000;
+}
+
+.site-navigation-list a:hover {
+color: #81b3d2;
+}
+
+.site-navigation-list a:active {
+color: rgba(0,0,0, 0.3);
+}
+
+.background-white{
+  background-color:#ffffff;
+  text-align: center;
+}
+
+.container h1 {
+   font-size: 21px;
+   color: #000000;
+}
+
+.features .features-item:first-child,
+.features .features-item:nth-child(3) {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.features .features-item:last-child,
+.features .features-item:nth-child(4),
+.features .features-item:nth-child(5) {
+  background-color: #eeeeee;
+}
+
+.features-list,
+.inner-features-list {
+  list-style: none;
+}
+
+.features-list:nth-last-child {
+  color: #ffffff;
+}
+
+.serch-hotel h2 {
+ font-size: 30px;
+ line-height: 26px;
+ color: #000000;
+}
+
+.serch-hotel p:first-child {
+ line-height: 24px;
+}
+
+.serch-hotel-form legend {
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.serch-hotel-form legend:hover,
+.button-booking:hover {
+  background-color: #604e43;
+}
+
+.serch-hotel-form legend:active,
+.button-booking:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-elem {
+ color: #000000;
+}
+
+.form-elem .date {
+  background-color: #f2f2f2;
+}
+
+.form-elem .date:hover {
+  background-color: #ebebeb;
+}
+
+.form-elem .date:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.plus-minus {
+  color: #a9a9a9;
+  font-size: 21px;
+}
+
+.plus-minus:hover {
+  color: #000000;
+}
+
+.plus-minus:active {
+  color: #81b3d2;
+}
+
+.button-search {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.button-search:hover {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+.index-button {
+  font-size: 21px;
+  font-weight: bold;
+}
+.filter-big {
+  color: #ffffff;
+}
+
+.filter-big legend{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-button {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.filter-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.filter-small h2 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+.filter-small p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sorting-small {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-small:hover {
+  color: rgba(129, 179, 210, 0.3);
+}
+
+.sorting-small:active {
+  color: #000000;
+}
+
+.sorting-active {
+  color: rgba(129, 179, 210, 0.3);
+}
+
+.triangles {
+  color: rgba(0, 0, 0, 0.3);
+}
+.triangles:hover {
+  color: #000000;
+}
+
+.triangles:active {
+  color: rgba(129, 179, 210, 0.3);
+}
+
+.triangles-active {
+ color: rgba(129, 179, 210, 0.3);
+}
+
+.name-hotel {
+font-size:21px;
+font-weight: bold;
+color: #000000;
+}
+
+.name-hotel:hover {
+color: #81b3d2;
+}
+
+.name-hotel:active {
+color: rgba(0, 0, 0, 0.3);
+}
+
+.cost-and-type-table {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-hotel {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.button-hotel:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-booking {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #766357;
+  color: #ffffff;
+}
+
+.hotel-star {
+ color: #81b3d2;
+}
+
+ .hotel-rating p {
+   line-height: 21px;
+   color: #666666:
+ }

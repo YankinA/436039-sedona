@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:поиск отелей в Седоне</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
-  <body>
+  <body class='body-hotel'>
     <header class='main-header'>
       <nav class='main-navigation' aria-label='Навигация'>
         <a class='logo-site-navigation-info' href='info.html' aria-label='переход на главную'>
@@ -14,7 +17,7 @@
           <li class='site-navigation-item'><a class='site-navigation-link' href='info.html'>Информация</a></li>
           <li class='site-navigation-item'><a class='site-navigation-link' href='album.html'>Фото и видео</a></li>
           <li class='site-navigation-item'><a class='site-navigation-link' href='map.html'>Карта штата</a></li>
-          <li class='site-navigation-item'><b class='current page'>Гостиницы</b></li>
+          <li class='site-navigation-item'><b class='current-page'>Гостиницы</b></li>
         </ul>
       </nav>
     </header>
@@ -62,18 +65,19 @@
                <button class='range-right' aria-label='передвинуть верхнюю границу стоимости'></button>
              </p>
           </fieldset>
-          <button type='submit' class='filter-button'>Найти</button>
+          <button type='submit' class='filter-button'>Показать</button>
         </form>
       </section>
       <section class='filter-small'>
         <h2>Найдено:<span class='counter'>3</span></h2>
+        <p>сортировка:</p>
         <div class='sorting'>
-          <a class='sorting-cost' href='#' aria-label='сортировать по цене'>По цене</a>
-          <a class='sorting-type' href='#' aria-label='сортировать по типу жилья'>По типу</a>
-          <a class='sorting-rating' href='#' aria-label='сортировать по рейтингу'>По рейтингу</a>
+          <a class='sorting-small sorting-cost sorting-active' href='#' aria-label='сортировать по цене'>По цене</a>
+          <a class='sorting-small sorting-type' href='#' aria-label='сортировать по типу жилья'>По типу</a>
+          <a class='sorting-small sorting-rating' href='#' aria-label='сортировать по рейтингу'>По рейтингу</a>
           <div class='triangles'>
-            <a href='#' class='triangles-wane' aria-label='сортировать по убыванию'>&#9660;</a>
-            <a href='#' class='triangles-growth' aria-label='сортировать по возрастанию'>&#9650;</a>
+            <a href='#' class='triangles triangles-growth' aria-label='сортировать по возрастанию'>&#9650;</a>
+            <a href='#' class='triangles triangles-wane triangles-active' aria-label='сортировать по убыванию'>&#9660;</a>
           </div>
         </div>
       </section>
@@ -94,14 +98,14 @@
                 <td class='cost-hotel'>от 3500 Р.</td>
               </tr>
             </table>
-            <a href='#' class='button description'>Подробнее</a>
-            <a href='#' class='button booking'>Забронировать</a>
+            <a href='#' class='button-hotel description button-search'>Подробнее</a>
+            <a href='#' class='button-booking'>Забронировать</a>
            </div>
           <div class='hotel-rating'>
            <span class='hotel-star'>&#9733;</span>
            <span class='hotel-star'>&#9733;</span>
            <span class='hotel-star'>&#9733;</span>
-           <p>Рейтинг<span class='rating'>8,5</span></p>
+           <p>Рейтинг:<span class='rating'>8,5</span></p>
           </div>
         </li>
         <li class='hotel-search-item'>
@@ -118,14 +122,14 @@
                <td class='cost-hotel'>от 2000 Р.</td>
              </tr>
            </table>
-           <a href='#' class='button description'>Подробнее</a>
-           <a href='#' class='button booking'>Забронировать</a>
+           <a href='#' class='button-hotel description button-search'>Подробнее</a>
+           <a href='#' class='button-booking'>Забронировать</a>
          </div>
          <div class='hotel-rating'>
           <span class='hotel-star'>&#9733;</span>
           <span class='hotel-star'>&#9733;</span>
           <span class='hotel-star'>&#9733;</span>
-          <p>Рейтинг<span class='rating'>8,9</span></p>
+          <p>Рейтинг:<span class='rating'>8,9</span></p>
          </div>
        </li>
        <li class='hotel-search-item'>
@@ -142,14 +146,14 @@
               <td class='type-hotel'>от 4000 Р.</td>
             </tr>
           </table>
-          <a href='#' class='button description'>Подробнее</a>
-          <a href='#' class='button booking'>Забронировать</a>
+          <a href='#' class='button-hotel description button-search'>Подробнее</a>
+          <a href='#' class='button-booking'>Забронировать</a>
          </div>
          <div class='hotel-rating'>
            <span class='hotel-star'>&#9733;</span>
            <span class='hotel-star'>&#9733;</span>
            <span class='hotel-star'>&#9733;</span>
-           <p>Рейтинг<span class='rating'>9,2</span></p>
+           <p>Рейтинг:<span class='rating'>9,2</span></p>
          </div>
         </li>
       </ul>
