@@ -108,18 +108,18 @@ color: rgba(0,0,0, 0.3);
   font-weight: bold;
 }
 
-.serch-hotel-form legend {
+.open-form {
   background-color: #766357;
   color: #ffffff;
   font-size: 21px;
 }
 
-.serch-hotel-form legend:hover,
+.open-form:hover,
 .button-booking:hover {
   background-color: #604e43;
 }
 
-.serch-hotel-form legend:active,
+.open-form:active,
 .button-booking:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
