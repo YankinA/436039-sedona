@@ -68,15 +68,12 @@ color: rgba(0,0,0, 0.3);
   font-weight: bold;
 }
 
-.features .features-item:first-child,
-.features .features-item:nth-child(3) {
+.bg-blue {
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.features .features-item:last-child,
-.features .features-item:nth-child(4),
-.features .features-item:nth-child(5) {
+.bg-gray {
   background-color: #eeeeee;
 }
 
@@ -184,7 +181,7 @@ color: rgba(0,0,0, 0.3);
 }
 
  .copyright {
-  color: #000000;  
+  color: #000000;
 }
 
 .filter-big {
