@@ -8,7 +8,7 @@
     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body class='body-hotel'>
-    <header class='main-header'>
+    <header class='main-header centered'>
       <nav class='main-navigation' aria-label='Навигация'>
         <a class='logo-site-navigation-info' href='info.html' aria-label='переход на главную'>
           <img class='logo' src='img/logo.png' width='138' height='70' alt='логотип &laquo;SITY OF SEDONA&raquo;'>
@@ -21,7 +21,7 @@
         </ul>
       </nav>
     </header>
-    <main class='container-search'>
+    <main class='container-search centered'>
       <section class='filter-big'>
         <form action='https://echo.htmlacademy.ru' method='get' class='filter-big-from'>
           <fieldset class='form-infrastructure'>
@@ -64,8 +64,9 @@
                <button class='range-left' aria-label='передвинуть нижнюю границу стоимости'></button>
                <button class='range-right' aria-label='передвинуть верхнюю границу стоимости'></button>
              </p>
+             <button type='submit' class='filter-button'>Показать</button>
           </fieldset>
-          <button type='submit' class='filter-button'>Показать</button>
+
         </form>
       </section>
       <section class='filter-small'>
@@ -75,31 +76,33 @@
           <a class='sorting-small sorting-cost sorting-active' href='#' aria-label='сортировать по цене'>По цене</a>
           <a class='sorting-small sorting-type' href='#' aria-label='сортировать по типу жилья'>По типу</a>
           <a class='sorting-small sorting-rating' href='#' aria-label='сортировать по рейтингу'>По рейтингу</a>
-          <div class='triangles'>
-            <a href='#' class='triangles triangles-growth' aria-label='сортировать по возрастанию'>&#9650;</a>
-            <a href='#' class='triangles triangles-wane triangles-active' aria-label='сортировать по убыванию'>&#9660;</a>
-          </div>
+        </div>
+        <div class='triangles'>
+          <a href='#' class='triangles triangles-growth' aria-label='сортировать по возрастанию'>&#9650;</a>
+          <a href='#' class='triangles triangles-wane triangles-active' aria-label='сортировать по убыванию'>&#9660;</a>
         </div>
       </section>
-      <h2 class='visually-hidden'>Список найденных отелей</h2>
+    <!--  <h2 class='visually-hidden'>Список найденных отелей</h2> -->
       <section class='search-results'>
        <ul class='hotel-search-list'>
          <li class='hotel-search-item'>
           <div class='hotel-card'>
-            <img src='img/amara-resort-and-spa.jpg' width='135' height='90' alt='Фото отеля'>
-            <a href='#' class='name-hotel'>Amara Resort & Spa</a>
-            <table class='cost-and-type-table'>
-              <tr class='visually-hidden'>
-                <th class='header-type-hotel'>Тип жилья</th>
-                <th class='header-cost-hotel' >Стоимость</th>
-              </tr>
-              <tr>
-                <td class='type-hotel'>Гостиница</td>
-                <td class='cost-hotel'>от 3500 Р.</td>
-              </tr>
-            </table>
-            <a href='#' class='button-hotel description button-search'>Подробнее</a>
-            <a href='#' class='button-booking'>Забронировать</a>
+            <img class='hotel-card-image' src='img/amara-resort-and-spa.jpg' width='135' height='90' alt='Фото отеля'>
+            <div class='hotel-info'>
+              <a href='#' class='name-hotel'>Amara Resort & Spa</a>
+              <table class='cost-and-type-table'>
+                <tr class='visually-hidden'>
+                  <th class='header-type-hotel'>Тип жилья</th>
+                  <th class='header-cost-hotel' >Стоимость</th>
+                </tr>
+                <tr>
+                  <td class='type-hotel'>Гостиница</td>
+                  <td class='cost-hotel'>от 3500 Р.</td>
+                </tr>
+              </table>
+              <a href='#' class='button-hotel description button-search'>Подробнее</a>
+              <a href='#' class='button-booking'>Забронировать</a>
+            </div>
            </div>
           <div class='hotel-rating'>
            <span class='hotel-star'>&#9733;</span>
@@ -110,20 +113,22 @@
         </li>
         <li class='hotel-search-item'>
          <div class='hotel-card'>
-           <img src='img/desert-quail-inn.jpg' width='135' height='90' alt='Фото отеля'>
-           <a href='#' class='name-hotel'>Desert Quail Inn</a>
-           <table class='cost-and-type-table'>
-             <tr class='visually-hidden'>
-               <th class='header-type-hotel'>Тип жилья</th>
-               <th class='header-cost-hotel'>Стоимость</th>
-             </tr>
-             <tr>
-               <td class='type-hotel'>Мотель</td>
-               <td class='cost-hotel'>от 2000 Р.</td>
-             </tr>
-           </table>
-           <a href='#' class='button-hotel description button-search'>Подробнее</a>
-           <a href='#' class='button-booking'>Забронировать</a>
+           <img class='hotel-card-image' src='img/desert-quail-inn.jpg' width='135' height='90' alt='Фото отеля'>
+           <div class='hotel-info'>
+             <a href='#' class='name-hotel'>Desert Quail Inn</a>
+             <table class='cost-and-type-table'>
+               <tr class='visually-hidden'>
+                 <th class='header-type-hotel'>Тип жилья</th>
+                 <th class='header-cost-hotel'>Стоимость</th>
+               </tr>
+               <tr>
+                 <td class='type-hotel'>Мотель</td>
+                 <td class='cost-hotel'>от 2000 Р.</td>
+               </tr>
+             </table>
+             <a href='#' class='button-hotel description button-search'>Подробнее</a>
+             <a href='#' class='button-booking'>Забронировать</a>
+           </div>
          </div>
          <div class='hotel-rating'>
           <span class='hotel-star'>&#9733;</span>
@@ -134,20 +139,22 @@
        </li>
        <li class='hotel-search-item'>
         <div class='hotel-card'>
-          <img src='img/villas-at-poco-diablo.jpg' width='135' height='90' alt='Фото отеля'>
-          <a href='#' class='name-hotel'>Villas at Poco Diablo</a>
-          <table class='cost-and-type-table'>
-            <tr class='visually-hidden'>
-              <th class='header-type-hotel'>Тип жилья</th>
-              <th class='header-cost-hotel'>Стоимость</th>
-            </tr>
-            <tr>
-              <td class='type-hotel'>Апартаменты</td>
-              <td class='type-hotel'>от 4000 Р.</td>
-            </tr>
-          </table>
-          <a href='#' class='button-hotel description button-search'>Подробнее</a>
-          <a href='#' class='button-booking'>Забронировать</a>
+          <img class='hotel-card-image' src='img/villas-at-poco-diablo.jpg' width='135' height='90' alt='Фото отеля'>
+          <div class='hotel-info'>
+            <a href='#' class='name-hotel'>Villas at Poco Diablo</a>
+            <table class='cost-and-type-table'>
+              <tr class='visually-hidden'>
+                <th class='header-type-hotel'>Тип жилья</th>
+                <th class='header-cost-hotel'>Стоимость</th>
+              </tr>
+              <tr>
+                <td class='type-hotel'>Апартаменты</td>
+                <td class='type-hotel'>от 4000 Р.</td>
+              </tr>
+            </table>
+            <a href='#' class='button-hotel description button-search'>Подробнее</a>
+            <a href='#' class='button-booking'>Забронировать</a>
+          </div>
          </div>
          <div class='hotel-rating'>
            <span class='hotel-star'>&#9733;</span>
@@ -159,7 +166,7 @@
       </ul>
      </section>
     </main>
-    <footer class='main-footer'>
+    <footer class='main-footer centered'>
       <p class='hashtag'>#visitsedona</p>
         <ul class='social'>
            <li><a class='social-button twitter' href='#' aria-label='Твиттер'>Твиттер</a></li>

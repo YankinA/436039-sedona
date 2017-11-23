@@ -8,7 +8,7 @@
     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-     <header class='main-header'>
+     <header class='main-header centered'>
        <nav class='main-navigation' aria-label='Навигация'>
          <img class='logo' src='img/logo.png' width='138' height='70' alt='логотип &laquo;SITY OF SEDONA&raquo;'>
          <ul class='site-navigation-list'>
@@ -19,18 +19,23 @@
          </ul>
        </nav>
      </header>
-     <main class='container'>
-       <img class='logo' src='img/sedona.png' width='458' height='352' alt='Welcome to the gorgeous Sedona,because the grand canyon sucks'>
-       <img class='logo' src='img/index-white-broken-line.png' width='1200' height='57'>
-       <div class='background-white'>
-         <h1 class='slogan'>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-         <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+     <main class='container centered'>
+       <div class='block-sedona'>
+         <img class='Welcome-sedona' src='img/sedona.png' width='458' height='352' alt='Welcome to the gorgeous Sedona,because the grand canyon sucks'>
+         <img class='white-broken-line' src='img/index-white-broken-line.png' width='1200' height='57'>
+         <div class='white-block'>
+           <h1 class='slogan'>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+           <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+         </div>
+       </div>
        <section class='features'>
          <ul class='features-list'>
            <li class='features-item bg-blue'>
-             <h3>Настоящий городок</h3>
-             <p><span class='features-number'>— №1 —</span> Седона — не аттракцион для туристов, там течет своя жизнь</P>
-             <img src='img/index-hotel-photo.jpg' width='800' height='256' alt='Фото настоящего мотеля'>
+             <div class='features-text'>
+               <h3>Настоящий городок</h3>
+               <p><span class='features-number'>— №1 —</span><br> Седона — не аттракцион для туристов, там течет своя жизнь</P>
+             </div>
+              <img src='img/index-hotel-photo.jpg' width='800' height='256' alt='Фото настоящего мотеля'>
            </li>
            <li class='features-item-inner'>
              <ul class='inner-features-list'>
@@ -48,22 +53,26 @@
                </li>
              </ul>
            </li>
-           <li class='features-item bg-blue'>
-             <h3>Там есть мост дьявола</h3>
-             <p><span class='features-number'>— №2 —</span>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+           <li class='features-item bg-blue bridge'>
+             <div class='features-text'>
+               <h3>Там есть мост дьявола</h3>
+               <p><span class='features-number'>— №2 —</span><br>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+           </div>
              <img src='img/index-bridge-photo.jpg' width='800' height='256' alt='Фото моста дьявола'>
            </li>
+        </ul>
+        <ul class='features-list-gray'>
            <li class='features-item bg-gray'>
              <h3>Небольшая площадь</h3>
-             <p><span class='features-number'>— №3 —</span>Все достопримечательности находятся очень близко</p>
+             <p><span class='features-number'>— №3 —</span><br>Все достопримечательности<br> находятся очень близко</p>
            </li>
            <li class='features-item bg-gray'>
              <h3>Красивая дорога</h3>
-             <p><span class='features-number'>— №4 —</span>ехать в Седону Ииз Лас-Вегаса совсем не скучно!</p>
+             <p><span class='features-number'>— №4 —</span><br>ехать в Седону Ииз Лас-Вегаса совсем<br> не скучно!</p>
            </li>
            <li class='features-item bg-gray'>
              <h3>Мало туристов</h3>
-             <p><span class='features-number'>— №5 —</span>Большинство едет в гранд каньон и толпится там</p>
+             <p><span class='features-number'>— №5 —</span><br>Большинство едет в гранд каньон и<br> толпится там</p>
            </li>
         </ul>
       </section>
@@ -97,9 +106,9 @@
           </fieldset>
         </form>
       </section>
-    </div>
+
      </main>
-     <footer class='main-footer'>
+     <footer class='main-footer centered'>
        <p class='hashtag'>#visitsedona</p>
          <ul class='social'>
            <li><a class='social-button twitter' href='#' aria-label='Твиттер'>Твиттер</a></li>
