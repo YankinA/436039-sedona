@@ -483,12 +483,11 @@ color: rgba(0,0,0, 0.3);
 background-color: #669ec0;
  }
 
- .social-button:active {
+ .social-button:active,
+ .social-button svg:active {
    background-color: #5496bd;
- }
-.social-button svg:active {
    opacity: 0.3;
-}
+ }
 
  .copyright {
    display: flex;
@@ -507,11 +506,11 @@ background-color: #669ec0;
   height: 41px;
   padding-left: 7px;
 }
-.svg-color:hover {
+.copyright a:hover .svg-color {
    fill: #669ec0;
  }
 
- .svg-color:active {
+ .copyright a:active .svg-color  {
     fill: #bdbbbc;
   }
 
