@@ -370,6 +370,11 @@ color: rgba(0,0,0, 0.3);
   width: 568px;
 }
 
+.form-index input {
+  border: none;
+  outline: 0;
+}
+
 .serch-hotel-form {
   border-style: none;
   font-weight: bold;
@@ -381,8 +386,13 @@ color: rgba(0,0,0, 0.3);
  margin-bottom: 45px;
 }
 
+.date label {
+  margin-right: 21px;
+}
+
 .form-elem .date {
   background-color: #f2f2f2;
+  width: 330px;
 }
 
 .form-elem .date:hover {
@@ -465,8 +475,6 @@ color: rgba(0,0,0, 0.3);
    margin: 0;
    padding: 0;
    list-style: none;
-
-
  }
 
  .social-button {
@@ -483,9 +491,12 @@ color: rgba(0,0,0, 0.3);
 background-color: #669ec0;
  }
 
- .social-button:active,
+.social-button:active {
+  background-color: #5496bd;
+}
+
+ .social-button:active svg,
  .social-button svg:active {
-   background-color: #5496bd;
    opacity: 0.3;
  }
 
@@ -496,6 +507,7 @@ background-color: #669ec0;
    list-style: none;
    color: #000000;
 }
+
 .copyright b {
   font-weight: lighter;
 }
@@ -506,6 +518,7 @@ background-color: #669ec0;
   height: 41px;
   padding-left: 7px;
 }
+
 .copyright a:hover .svg-color {
    fill: #669ec0;
  }
@@ -513,6 +526,8 @@ background-color: #669ec0;
  .copyright a:active .svg-color  {
     fill: #bdbbbc;
   }
+
+  /* далее уникальные стили hotels-search.html */
 
 .container-search {
   width: 1200px;
@@ -526,6 +541,7 @@ background-color: #669ec0;
   background-image: url('../img/background-hotel-search.jpg');
   color: #ffffff;
 }
+
 .filter-big-from {
   display: flex;
 }
@@ -656,7 +672,6 @@ background-color: #669ec0;
 
 .search-results {
   background-color: #ffffff;
-
 }
 
 .hotel-search-list {
@@ -728,8 +743,8 @@ color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
   padding: 4px 17px;
   margin-right: 4px;
-
 }
+
 .button-hotel:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -759,7 +774,7 @@ color: rgba(0, 0, 0, 0.3);
 
 .wrapper-p-rating {
   background-color: #f2f2f2;
-   }
+ }
 
 .hotel-rating p {
    line-height: 21px;
