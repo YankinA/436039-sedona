@@ -23,45 +23,66 @@
       <section class='filter-big'>
         <form action='https://echo.htmlacademy.ru' method='get' class='filter-big-from'>
           <fieldset class='form-infrastructure'>
-            <legend>Инфраструктура:</legend>
+            <legend class='infrastructure-legend'>Инфраструктура:</legend>
             <p class='filter-option'>
-              <input class='visually-hidden filter-input-checkbox' type='checkbox' name='pool' id='pool'>
-              <label for='pool'>Бассейн</label>
+              <label class='nice-checkbox' for='pool'>
+                <input class='visually-hidden filter-input-checkbox' type='checkbox' name='pool' id='pool'>
+                <svg class='checkbox-off' xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <svg class='checkbox-on' xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              Бассейн</label>
             </p>
             <p class='filter-option'>
-              <input class='visually-hidden filter-input-checkbox' type='checkbox' name='parking' id='parking'>
-              <label for='parking'>Парковка</label>
+              <label class='nice-checkbox' for='parking'>
+                <input class='visually-hidden filter-input-checkbox' type='checkbox' name='parking' id='parking'>
+                <svg class='checkbox-off' xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <svg class='checkbox-on' xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              Парковка</label>
             </p>
             <p class='filter-option'>
-              <input class='visually-hidden filter-input-checkbox' type='checkbox' name='wi-fi' id='wi-fi'>
-              <label for='wi-fi'>wi-fi</label>
+              <label class='nice-checkbox' for='wi-fi'>
+                <input class='visually-hidden filter-input-checkbox' type='checkbox' name='wi-fi' id='wi-fi' disabled checked>
+                <svg class='checkbox-off' xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <svg  class='checkbox-on' xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              wi-fi</label>
             </p>
           </fieldset>
           <fieldset class ='form-type-hotel' >
-            <legend>Тип жилья:</legend>
+            <legend class='type-hotel-legend'>Тип жилья:</legend>
             <p class='filter-option'>
-              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='hotel' id='hotel'>
-              <label for='hotel'>Гостиница</label>
+              <label class='nice-checkbox' for='hotel'>
+                <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='hotel' id='hotel'>
+                <svg class='checkbox-off' xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <svg class='checkbox-on' xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              Гостиница</label>
             </p>
             <p class='filter-option'>
-              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='motel' id='motel'>
-              <label for='motel'>Мотель</label>
+              <label class='nice-checkbox' for='motel'>
+                <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='motel' id='motel'>
+                <svg class='checkbox-off' xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <svg class='checkbox-on' xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              Мотель</label>
             </p>
             <p class='filter-option'>
-              <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='apartments' id='apartments'>
-              <label for='apartments'>Апартаменты</label>
+              <label class='nice-checkbox' for='apartments'>
+                <input  class='visually-hidden filter-input-checkbox' type='checkbox' name='apartments' id='apartments' disabled>
+                <svg class='checkbox-off' xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <svg  class='checkbox-on' xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              Апартаменты</label>
             </p>
           </fieldset>
           <fieldset class='form-cost'>
             <legend>Стоимость в сутки(Р):</legend>
-                <label class='visually-hidden' for='min-price'>нижняя граница стоимости</label>
-                <input type='text' name='min-price' id='min-price'>
-                <label class='visually-hidden' for='max-price'>верхняя граница стоимости</label>
-                <input type='text' name='max-price' id='max-price'>
-             <p class='filter-option'>
-               <button class='range-left' aria-label='передвинуть нижнюю границу стоимости'></button>
-               <button class='range-right' aria-label='передвинуть верхнюю границу стоимости'></button>
-             </p>
+              <div class='filter-price'>
+                <label class='min-price' for='min-price'>от <input type='text' name='min-price' id='min-price' value='0'></label>
+                <label class='max-price' for='max-price'>до <input type='text' name='max-price' id='max-price' value='3000'></label>
+               </div>
+             <div class='filter-range'>
+                 <div class='scale'>
+                 <div class='bar'></div>
+               </div>
+               <div class='range-toggle range-min' aria-label='передвинуть нижнюю границу стоимости'></div>
+               <div class='range-toggle range-max' aria-label='передвинуть верхнюю границу стоимости'></div>
+             </div>
              <button type='submit' class='filter-button'>Показать</button>
           </fieldset>
 

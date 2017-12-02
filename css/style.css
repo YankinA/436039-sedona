@@ -16,7 +16,8 @@ body {
 .centered {
   background-color: #ffffff;
   margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0,1,1,0.20);
+  -webkit-box-shadow: 0 5px 15px rgba(0,1,1,0.20);
+          box-shadow: 0 5px 15px rgba(0,1,1,0.20);
   max-width: 1200px;
 }
 
@@ -33,7 +34,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -61,10 +64,17 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-list {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-basis: 100%;
-   justify-content: space-between;
-   align-items: center;
+   -ms-flex-preferred-size: 100%;
+       flex-basis: 100%;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    margin: 0;
    padding: 0;
    list-style: none;
@@ -127,9 +137,15 @@ color: rgba(0,0,0, 0.3);
   background-image: url('../img/background-index.jpg') ;
   background-position: 30% 115%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 100%;
-  flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Welcome-sedona {
@@ -201,17 +217,26 @@ color: rgba(0,0,0, 0.3);
 }
 
 .bg-blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
 .bridge {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .features-list-gray {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -221,7 +246,7 @@ color: rgba(0,0,0, 0.3);
  .features-list-gray .features-item {
    width: 400px;
    margin-top: 43px;
-   margin-bottom: 45px;
+   margin-bottom: 44px;
    line-height: 21px;
 }
 
@@ -240,6 +265,8 @@ color: rgba(0,0,0, 0.3);
 }
 
 .inner-features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin: 0;
@@ -332,7 +359,7 @@ color: rgba(0,0,0, 0.3);
 
 .instruct-form {
   line-height: 24px;
-  margin-bottom: 43px;
+  margin-bottom: 46px;
 
 }
 
@@ -341,12 +368,13 @@ color: rgba(0,0,0, 0.3);
   background-color: #766357;
   color: #ffffff;
   padding-top: 31px;
-  padding-bottom: 28px;
+  padding-bottom: 31px;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing:-1px;
+  border-style: none;
 }
 
 .open-form:hover,
@@ -362,12 +390,16 @@ color: rgba(0,0,0, 0.3);
 
  .wrapper-form {
    width: 100%;
-   padding-bottom: 76px;
+   padding-bottom: 78px;
    background-image: url('../img/index-map.jpg');
  }
 
 .form-index {
   width: 568px;
+}
+
+.form-index button {
+  border-style: none;
 }
 
 .form-index input {
@@ -381,18 +413,25 @@ color: rgba(0,0,0, 0.3);
 }
 
 .form-elem {
- color: #000000;
- margin-top: 45px;
- margin-bottom: 45px;
+  color: #000000;
+  margin-bottom: 28px;
 }
 
-.date label {
-  margin-right: 21px;
+.form-elem:first-child {
+  margin-top: 50px;
 }
 
 .form-elem .date {
+  position: relative;
+  width: 345px;
+  height: 38px;
+  font-weight: bold;
+  text-transform:uppercase;
+  padding-left: 11px;
+  padding-right: 31px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #f2f2f2;
-  width: 330px;
 }
 
 .form-elem .date:hover {
@@ -404,13 +443,64 @@ color: rgba(0,0,0, 0.3);
   border: 2px solid #e5e5e5;
   outline: none;
 }
+
+.form-elem {
+  position: relative;
+}
+
+.date-elem label {
+  margin-right: 20px;
+}
+
+.calendar {
+   position: absolute;
+   top: 10px;
+   right: 50px;
+}
+
+.calendar path {
+  fill: #cacaca;
+}
+
+.calendar:hover path {
+  fill: #000000;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
+}
+
+.number-elem {
+  position: relative;
+}
+
+.people-label {
+  margin-right: 41px;
+}
+
+.child-label {
+  margin-right: 27px;
+}
+
+.input-people {
+  margin-right: 50px;
+}
+
 .form-elem  .number {
-  height: 20px;
-  width: 20px;
+  width: 115px;
+  height: 38px;
+  font-weight: bold;
+  text-transform:uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
 }
 .plus-minus {
+  position: absolute;
   color: #a9a9a9;
   font-size: 21px;
+  font-weight: bold;
+  height: 38px;
+  background-color: #f2f2f2;
 }
 
 .plus-minus:hover {
@@ -421,14 +511,31 @@ color: rgba(0,0,0, 0.3);
   color: #81b3d2;
 }
 
+.min-people {
+  left: 165px;
+}
+
+.min-child {
+  right: 130px;
+}
+
+.max-people {
+  left: 240px;
+}
+
+.max-child {
+  right: 50px;
+}
+
 .button-search {
   width: 458px;
-  margin-top: 15px;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-bottom: 18px;
-  margin-bottom: 45px;
+  margin-top: 25px;
+  margin-bottom: 48px;
   color: #ffffff;
   background-color: #81b3d2;
+  text-transform: uppercase;
 }
 
 .button-search:hover {
@@ -446,6 +553,8 @@ color: rgba(0,0,0, 0.3);
 
 .main-footer {
   width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -469,18 +578,30 @@ color: rgba(0,0,0, 0.3);
 }
 
  .social {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    margin: 0;
    padding: 0;
    list-style: none;
  }
 
  .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 48px;
   width: 46px;
   margin-right: 6px;
@@ -501,9 +622,15 @@ background-color: #669ec0;
  }
 
  .copyright {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
    list-style: none;
    color: #000000;
 }
@@ -534,19 +661,57 @@ background-color: #669ec0;
 }
 
 .filter-big {
-  padding-top: 32px;
-  padding-bottom: 15px;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-top: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-image: url('../img/background-hotel-search.jpg');
+  background-position: 5% 15%;
   color: #ffffff;
 }
 
-.filter-big-from {
-  display: flex;
+.filter-option {
+  margin-bottom: 22px;
+}
+
+
+.filter-option:first-child {
+  margin-top: 33px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 18px;
+}
+
+.nice-checkbox {
+  position: relative;
+  padding-left: 45px;
+}
+
+.checkbox-on,
+.checkbox-off {
+  position: absolute;
+  left: 0;
+}
+
+.nice-checkbox input:not(:checked) ~ .checkbox-on {
+  display: none;
+}
+
+.nice-checkbox input:checked ~ .checkbox-off {
+  display: none;
+}
+
+.nice-checkbox input:disabled ~ svg path {
+  fill: #6a6a6a;
+}
+
+.nice-checkbox input:disabled ~ svg path {
+  fill: #6a6a6a;
 }
 
 .filter-big-from {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -562,19 +727,131 @@ background-color: #669ec0;
   border-style: none;
 }
 
-.form-infrastructure,
+.form-infrastructure {
+  width: 230px;
+}
+
 .form-type-hotel {
-  width: 300px;
+  width: 460px;
 }
 
 .form-cost {
-  width: 300px;
+  width: 320px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.form-cost legend {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-price {
+  position: relative;
+  height: 32px;
+  margin-bottom: 16px;
+  padding-bottom: 2px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.filter-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+
+.filter-price label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.min-price,
+.max-price {
+  width: 90px;
+  padding-left: 60px;
+  padding-bottom: 15px;
+}
+
+.filter-price input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  text-align:left;
+}
+
+.filter-range {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.filter-range .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-range .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-min {
+  left: 0;
+}
+
+.range-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+  border: 9px solid #ffffff;
 }
 
 .filter-button {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 30px;
+  font-size: 14px;
+  line-height: 20px;
   color: #ffffff;
-  background-color: transparent;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -583,8 +860,12 @@ background-color: #669ec0;
 }
 
  .filter-small {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    background-color: #ffffff;
    padding-left: 72px;
    padding-right: 72px;
@@ -593,8 +874,12 @@ background-color: #669ec0;
  }
 
 .counter-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 240px;
 }
 
@@ -617,6 +902,8 @@ background-color: #669ec0;
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 816px;
   margin-left: 36px;
@@ -646,8 +933,13 @@ background-color: #669ec0;
 }
 
 .triangles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .triangles svg {
@@ -685,6 +977,8 @@ background-color: #669ec0;
 }
 
 .hotel-search-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #e5e5e5;
   padding-left: 72px;
@@ -692,18 +986,24 @@ background-color: #669ec0;
 }
 
 .hotel-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .hotel-card-image {
   padding-top: 30px;
-  padding-bottom: 30px;
   padding-right: 30px;
 }
 
 .hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 262px;
   margin-right: 522px;
   padding-top: 26px;
@@ -728,7 +1028,6 @@ color: rgba(0, 0, 0, 0.3);
 .cost-and-type-table {
   font-size: 14px;
   line-height: 21px;
-  margin-top: 6px;
   margin-bottom: 13px;
 }
 
@@ -737,6 +1036,9 @@ color: rgba(0, 0, 0, 0.3);
   width: 114px;
 }
 
+.wrapper-button-hotel {
+  width: 270px;
+}
 .button-hotel {
   font-size: 14px;
   line-height: 21px;
@@ -752,6 +1054,7 @@ color: rgba(0, 0, 0, 0.3);
 .button-booking {
   font-size: 14px;
   line-height: 21px;
+  font-weight: bold;
   background-color: #766357;
   color: #ffffff;
   padding: 4px 17px;
@@ -763,8 +1066,12 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-bottom: 45px;
 }
 
