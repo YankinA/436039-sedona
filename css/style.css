@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 
   font-family: 'PT Sans',"Arial", sans-serif;
   font-size: 14px;
@@ -334,7 +335,7 @@ color: rgba(0,0,0, 0.3);
   margin-bottom: 25px;
 }
 .inner-features-item p {
-  margin-bottom: 82px;
+  margin-bottom: 80px;
 }
 
 .features-list:nth-last-child {
@@ -390,8 +391,8 @@ color: rgba(0,0,0, 0.3);
 
  .wrapper-form {
    width: 100%;
-   padding-bottom: 78px;
    background-image: url('../img/index-map.jpg');
+   padding-bottom: 202px;
  }
 
 .form-index {
@@ -440,8 +441,8 @@ color: rgba(0,0,0, 0.3);
 
 .form-elem .date:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  outline: none;
+  outline: 2px solid #e5e5e5;
+  border: none;
 }
 
 .form-elem {
@@ -489,11 +490,16 @@ color: rgba(0,0,0, 0.3);
 .form-elem  .number {
   width: 115px;
   height: 38px;
+  padding-left: 45px;
+  padding-right: 45px;
   font-weight: bold;
   text-transform:uppercase;
   text-align: center;
   background-color: #f2f2f2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .plus-minus {
   position: absolute;
   color: #a9a9a9;
@@ -558,8 +564,13 @@ color: rgba(0,0,0, 0.3);
   display: flex;
 }
 
-/*прозрачный фон*/
 .footer-index {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 50%;
+  margin-left: -600px;
+  bottom: 0px;
+
 }
 
 .footer-block {
