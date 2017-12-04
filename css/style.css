@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  position: relative;
 
   font-family: 'PT Sans',"Arial", sans-serif;
   font-size: 14px;
@@ -390,12 +389,79 @@ color: rgba(0,0,0, 0.3);
 }
 
  .wrapper-form {
+   position: relative;
    width: 100%;
    background-image: url('../img/index-map.jpg');
-   padding-bottom: 202px;
+ }
+
+ .wrapper-form iframe {
+   width: 100%;
+   min-height: 582px;
+
+}
+
+ .form-show {
+   display: none;
+ }
+
+
+ .form-animation {
+   animation: opacity 0.3s;
+ }
+
+
+
+ @keyframes opacity {
+
+
+    0% {
+      transform: translateX(250px);
+       background-color: rgba(255,255,255, 0.9);
+    }
+
+
+    15% {
+      transform: translateX(200px);
+
+    }
+
+    25% {
+      transform: translateX(150px);
+
+    }
+
+    35% {
+      transform: translateX(110px);
+
+    }
+
+    50% {
+      transform: translateX(80px);
+
+    }
+
+    75% {
+      transform: translateX(60px);
+       background-color: rgba(255,255,255, 0.7);
+    }
+
+    85% {
+      transform: translateX(40px);
+       background-color: rgba(255,255,255, 0.6);
+    }
+
+   100% {
+     transform: translateX(0);
+   }
+
+
  }
 
 .form-index {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -284px;
   width: 568px;
 }
 
@@ -565,11 +631,9 @@ color: rgba(0,0,0, 0.3);
 }
 
 .footer-index {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
-  left: 50%;
-  margin-left: -600px;
-  bottom: 0px;
+  position: relative;
+  margin-top: -120px;
+  background-color: rgba(255, 255, 255, 0.9);
 
 }
 
@@ -720,6 +784,10 @@ background-color: #669ec0;
   fill: #6a6a6a;
 }
 
+.nice-checkbox input:focus  ~ .checkbox-off  {
+  outline: 2px solid #81b3d2;
+}
+
 .filter-big-from {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,8 +855,8 @@ background-color: #669ec0;
 .filter-price label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 29px;
+  vertical-align: bottom;
   cursor: pointer;
 }
 
@@ -807,6 +875,8 @@ background-color: #669ec0;
   background: none;
   border: none;
   text-align:left;
+  vertical-align: top;
+  padding-bottom: 10px;
 }
 
 .filter-range {
