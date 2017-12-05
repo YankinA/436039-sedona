@@ -209,6 +209,10 @@ color: rgba(0,0,0, 0.3);
   margin-right: auto;
 }
 
+.bridge h3 {
+  max-width: 300px;
+}
+
 .features-number {
   margin-bottom: 20px;
 }
@@ -575,6 +579,7 @@ color: rgba(0,0,0, 0.3);
   font-size: 21px;
   font-weight: bold;
   height: 38px;
+  width: 20px;
   background-color: #f2f2f2;
 }
 
@@ -599,7 +604,7 @@ color: rgba(0,0,0, 0.3);
 }
 
 .max-child {
-  left: 470px;
+  left: 480px;
 }
 
 .button-search {
@@ -1139,8 +1144,7 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .wrapper-button-hotel {
-  width: 270px;
-  max-height: 35px;
+  width: 300px;
 }
 
 .button-hotel {
@@ -1201,4 +1205,14 @@ color: rgba(0, 0, 0, 0.3);
 .rating {
   padding-left: 4px;
   padding-right: 2px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .social,
+  .copyright {
+     align-items: center;
+   }
+   .sorting {
+     padding-left: 39px;
+   }
 }
