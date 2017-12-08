@@ -205,8 +205,6 @@ a {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
-	margin-top: 5px;
-	margin-bottom: 25px;
 	max-width: 150px;
 	margin-left: auto;
 	margin-right: auto;
@@ -230,7 +228,12 @@ a {
 .features-text {
 	width: 400px;
 	text-align: center;
-	vertical-align: center;
+	padding-top: 46px;
+	padding-bottom: 46px;
+}
+
+.features-text h3 {
+	margin-bottom: 25px;
 }
 
 .bg-blue {
@@ -262,13 +265,14 @@ a {
 
 .features-list-gray .features-item {
 	width: 400px;
-	margin-top: 43px;
-	margin-bottom: 44px;
+	padding-top: 47px;
+	padding-bottom: 44px;
 	line-height: 21px;
 }
 
 .features-list-gray h3 {
 	font-weight: bold;
+	margin-bottom: 25px;
 }
 
 .features-list-gray p {
@@ -396,6 +400,7 @@ a {
 	font-weight: bold;
 	letter-spacing: -1px;
 	border-style: none;
+	cursor: pointer;
 }
 
 .open-form:hover,
@@ -580,6 +585,7 @@ a {
 	height: 38px;
 	width: 20px;
 	background-color: #f2f2f2;
+	cursor: pointer;
 }
 
 .plus-minus:hover {
@@ -615,6 +621,7 @@ a {
 	color: #ffffff;
 	background-color: #81b3d2;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .button-search:hover {
@@ -721,7 +728,7 @@ a {
 	padding-top: 5px;
 }
 
-.copyright a {
+.copyright-html-academy {
 	display: block;
 	width: 115px;
 	height: 41px;
@@ -729,11 +736,11 @@ a {
 	padding-bottom: 5px;
 }
 
-.copyright a:hover .svg-color {
+.copyright-html-academy:hover .svg-color {
 	fill: #669ec0;
 }
 
-.copyright a:active .svg-color  {
+.copyright-html-academy:active .svg-color  {
 	fill: #bdbbbc;
 }
 
@@ -766,6 +773,7 @@ a {
 .nice-checkbox {
 	position: relative;
 	padding-left: 42px;
+	cursor: pointer;
 }
 
 .form-infrastructure .nice-checkbox {
@@ -868,6 +876,7 @@ a {
 	padding-top: 2px;
 	padding-left: 67px;
 	cursor: pointer;
+	vertical-align: top;
 }
 
 .filter-price label:last-child {
@@ -1014,6 +1023,7 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 	margin-right: 34px;
 	border-bottom: 1px dotted #81b3d2;
+	cursor: pointer;
 }
 
 .sorting-small:hover {
@@ -1105,7 +1115,6 @@ a {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	width: 262px;
-	margin-right: 522px;
 	padding-top: 23px;
 	padding-bottom: 30px;
 }
@@ -1170,6 +1179,7 @@ a {
 .hotel-rating {
 	padding-top: 29px;
 	padding-bottom: 27px;
+	margin-left: auto;
 }
 
 .hotel-star {
@@ -1183,7 +1193,7 @@ a {
 }
 
 .hotel-star svg {
-	margin-left: 6px;
+	margin-left: 5px;
 }
 
 .wrapper-p-rating {
@@ -1195,7 +1205,7 @@ a {
 	color: #666666;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	margin-left: 15px;
+	margin-left: 14px;
 	margin-right: 11px;
 	margin-bottom: 0;
 }
